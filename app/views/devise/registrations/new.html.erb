@@ -1,0 +1,57 @@
+<div class="main">
+  <div class="inner">
+    <h2 class="form-title">会員情報入力</h2>
+
+    <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+      <%= render "devise/shared/error_messages", resource: resource %>
+
+      <div class="field-with-margin">
+        <%= f.label :nickname, "ニックネーム" %><br />
+        <%= f.text_field :nickname, class: "input" %>
+      </div>
+
+      <div class="field-with-margin">
+        <%= f.label :email, "メールアドレス" %><br />
+        <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "input" %>
+      </div>
+
+      <div class="field-with-margin">
+        <%= f.label :password, "パスワード" %>
+        <% if @minimum_password_length %>
+          <span class="hint">（<%= @minimum_password_length %>文字以上）</span>
+        <% end %><br />
+        <%= f.password_field :password, autocomplete: "new-password", class: "input" %>
+      </div>
+
+      <div class="field-with-margin">
+        <%= f.label :password_confirmation, "パスワード（確認）" %><br />
+        <%= f.password_field :password_confirmation, autocomplete: "new-password", class: "input" %>
+      </div>
+
+      <div class="field-with-margin">
+        <%= f.label :last_name, "お名前（姓）" %><br />
+        <%= f.text_field :last_name, class: "input" %>
+      </div>
+
+      <div class="field-with-margin">
+        <%= f.label :first_name, "お名前（名）" %><br />
+        <%= f.text_field :first_name, class: "input" %>
+      </div>
+
+      <div class="field-with-margin">
+        <%= f.label :birthday, "生年月日" %><br />
+        <%= f.date_select :birthday,
+            { start_year: 1930, end_year: Time.now.year - 5, prompt: { year: '--', month: '--', day: '--' } },
+            class: "date-select" %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "会員登録", class: "submit-button" %>
+      </div>
+    <% end %>
+
+    <div class="links">
+      <%= render "devise/shared/links" %>
+    </div>
+  </div>
+</div>

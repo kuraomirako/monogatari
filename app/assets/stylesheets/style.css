@@ -1,0 +1,98 @@
+/*****************************************************************************************
+devise用（会員登録）
+*****************************************************************************************/
+.main {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.inner {
+  max-width: 500px;
+  margin: 0 auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.field-with-margin {
+  margin-bottom: 1.2rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.submit-button {
+  padding: 0.6rem 2rem;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.date-select select {
+  margin-right: 0.5rem;
+}
+
+/*****************************************************************************************
+devise用（会員登録）
+*****************************************************************************************/
+.auth-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-button:hover {
+  background-color: #2980b9;
+}
+
+.auth-links {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.auth-link {
+  display: block;
+  color: #3498db;
+  margin-top: 8px;
+  text-decoration: none;
+}
+
+
+
